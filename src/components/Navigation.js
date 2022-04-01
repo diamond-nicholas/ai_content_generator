@@ -9,13 +9,16 @@ import {
   Button,
 } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   return (
     <>
       <Navbar bg='light' expand='lg'>
         <Container fluid>
-          <Navbar.Brand href='#'>Navbar scroll</Navbar.Brand>
+          <Navbar.Brand>
+            <Link to='/'>AI Content Generator</Link>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls='navbarScroll' />
           <Navbar.Collapse id='navbarScroll'>
             <Nav
@@ -23,20 +26,14 @@ const Navigation = () => {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href='#action1'>Home</Nav.Link>
-              <Nav.Link href='#action2'>Link</Nav.Link>
-              <NavDropdown title='Link' id='navbarScrollingDropdown'>
-                <NavDropdown.Item href='#action3'>Action</NavDropdown.Item>
-                <NavDropdown.Item href='#action4'>
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href='#action5'>
-                  Something else here
-                </NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link href='#' disabled>
-                Link
+              <Nav.Link>
+                <Link to='/products'>Product Description</Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to='/coldemails'>Cold emails</Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to='/tweets'>Tweets</Link>
               </Nav.Link>
             </Nav>
             <Form className='d-flex'>
@@ -51,6 +48,7 @@ const Navigation = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <main>hello world</main>
     </>
   );
 };

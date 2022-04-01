@@ -23,7 +23,6 @@ const Product = () => {
     ///open ai
 
     const configuration = new Configuration({
-      // apiKey: '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',
       apiKey: process.env.REACT_APP_OPENAI_API_KEY,
     });
     const openai = new OpenAIApi(configuration);

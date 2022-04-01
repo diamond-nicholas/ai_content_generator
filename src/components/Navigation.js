@@ -48,7 +48,6 @@ const Navigation = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <main>hello world</main>
     </>
   );
 };

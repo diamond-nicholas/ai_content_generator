@@ -1,0 +1,70 @@
+.templateTwo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f6fa;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  height: 100vh;
+
+  article {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    width: 30%;
+    .header {
+      text-align: center;
+
+      h2 {
+        padding-top: 1.5rem;
+        font-size: 22px;
+        margin-bottom: 40px;
+        font-weight: 700 !important;
+        font-family: 'Nexa Light', sans-serif;
+        color: #444f60;
+      }
+    }
+
+    form {
+      div {
+        padding: 1.5rem 0;
+
+        button {
+          background: #8c8cf9;
+          padding: 1rem 1rem;
+          color: #fff;
+          border: 1px solid #8c8cf9;
+          border-radius: 20px;
+          font-size: 1rem;
+          display: block;
+          width: 100%;
+        }
+      }
+      input {
+        border: none;
+        outline: none;
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        border-bottom: 1px solid #a9abac;
+        background: transparent;
+        padding: 1rem 0;
+      }
+
+      .checkbox {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        input {
+          width: 1.5rem;
+          height: 1.4rem;
+          margin-right: 1rem;
+        }
+        p {
+          color: #a9abac;
+        }
+      }
+    }
+  }
+}

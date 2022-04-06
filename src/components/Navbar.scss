@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 20rem;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    width: 100&;
+    color: #4a4a4a;
+    background: #eee;
+
+    .feature,
+    .pricing,
+    .login,
+    .signu {
+      text-decoration: none;
+    }
+
+    .nav-left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      // .logo {
+      //   height: 100px;
+      //   width: 100px;
+      //   margin: 2rem;
+      // }
+
+      .nav-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        margin: 2rem;
+
+        li {
+          margin: 1.5rem;
+        }
+
+        .hide {
+          display: none;
+        }
+      }
+    }
+
+    .nav-right {
+      .signup {
+        border: 1px solid #5fc1eb;
+        color: #5fc1eb;
+        padding: 15px 40px;
+        background: #fff;
+        border-radius: 50px;
+        font-weight: 600;
+      }
+    }
+
+    .mobile-menu-icon {
+      display: none;
+    }
+
+    @media screen and (max-width: 780px) {
+      .navbar {
+        background: #344258;
+      }
+      .nav-links {
+        display: none !important;
+      }
+
+      .features,
+      .pricing,
+      .login,
+      .signup2 {
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+        transition: all 0.5s ease;
+      }
+
+      .signup2 {
+        border: 1px solid #fff;
+        color: #fff;
+        padding: 15px 40px;
+        border-radius: 50px;
+        // font-weight: 600;
+        background: #344258;
+        margin-bottom: 2rem;
+      }
+      .nav-links-mobile {
+        position: absolute;
+        display: block;
+        list-style: none;
+        background: #344258;
+        color: #fff;
+        left: 0;
+        top: 75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+      }
+
+      .signup {
+        display: none;
+      }
+
+      .mobile-menu-icon {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 19px;
+        outline: none;
+      }
+    }
+  }
+}
